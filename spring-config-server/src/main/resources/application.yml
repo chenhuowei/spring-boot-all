@@ -9,8 +9,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/chenhuowei/spring-cloud-config/
-          searchPaths: config
+          uri: https://github.com/chenhuowei/spring-boot-all
+          searchPaths: spring-cloud-config/config
           username:
           password:
       label: master
