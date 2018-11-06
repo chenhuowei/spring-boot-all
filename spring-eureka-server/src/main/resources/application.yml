@@ -1,11 +1,18 @@
 server:
-  port: 8010
-# kafka
+   port: 8761
+
+eureka:
+   instance:
+       hostname: localhost
+   client:
+   #通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
+       registerWithEureka: false
+       fetchRegistry: false
+       serviceUrl:
+           defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 spring:
-  data:
-      elasticsearch:
-        cluster-name: fireway #默认即为 elasticsearch
-        cluster-nodes: 127.0.0.1:9300 #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
+  application:
+    name: eurka-server
 logging:
   level:
     root: INFO

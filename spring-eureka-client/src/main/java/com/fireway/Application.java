@@ -1,14 +1,14 @@
 package com.fireway;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Author: chenhuowei
  * @Date: 2018/11/2 11:19
  * @Description:
  */
-@EnableEurekaServer
+@EnableEurekaClient
 @SpringBootApplication
 public class Application {
 
