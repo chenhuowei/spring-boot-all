@@ -42,7 +42,7 @@ public class HelloController {
 
     @GetMapping("hello")
     public String hello(@RequestParam(value = "name", defaultValue = "fireway") String name) {
-        return this.restTemplate.getForObject("http://localhost:8988/hi?name=eurekac",String.class);
+        return this.restTemplate.getForObject("http://localhost:8762/hi?name-zipkin",String.class);
     }
 
 
